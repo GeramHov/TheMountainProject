@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rokkitt&display=swap");
+
+/* GENERAL*/
+
+
+h1 {
+  font-family: "Rokkitt", serif;
+  font-size: 4em;
+}
+
+h2 {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.2em;
+}
+
+h3 {
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+}
+
+h4,
+h5 {
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+}
+
+h6 {
+  font-size: 27px;
+  padding-top: 7px;
+  font-weight: 400;
+}
+
+p {
+  font-weight: 300;
+  font-size: larger;
+}
+
+a img {
+  margin-bottom: 10px;
+}
+
+.back-to-top {
+  position: fixed;
+  right: -100px;
+  bottom: 10px;
+}
+.back-to-top.active {
+  transition-duration: 0.5s;
+  right: 20px;
+}
+
+/* HOME*/
+
+#home {
+  background-image: url(../images/bg_header.jpg);
+  background-position: top;
+  background-size: cover;
+  padding-bottom: 420px;
+}
+
+.top-text {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+body header p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/* NAVBAR */
+
+header button:focus:not(:focus-visible) {
+  box-shadow: none;
+}
+
+/*ABOUT*/
+
+#about {
+  background-image: url(../images/bg_nuage.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+/*HISTORY*/
+
+#history {
+  background-image: url(../images/bg_appareil_photo.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#column1 {
+  margin-left: 50%;
+  background-color: rgba(97, 197, 244, 0.4);
+}
+
+#column2 {
+  margin-right: 50%;
+  background-color: rgba(97, 197, 244, 0.5);
+}
+
+/*PHOTOS JS*/
+
+#photos{
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 50px 0;
+}
+
+.photos{
+  margin: 0 auto;
+
+}
+.grid-sizer{
+  width: 400px;
+}
+.photo-item {
+ 
+  width: 400px;
+  /* height: 390px; */
+  padding: 10px;
+}
+.photo-item img {
+  width: 100%;
+  height: auto;
+}
+.photo-item--width2 {
+  width: 800px;
+}
+
+/* .photo-item--heigth2 { height: 780px; } */
+
+/*CONTACT*/
+
+#contact {
+  position: relative;
+  padding: 100px 0;
+  overflow: hidden;
+}
+.img-contact {
+  position: absolute;
+  z-index:-1;
+  object-fit: cover;
+  object-position: top;
+  height: 100%;
+  width: 260%;
+  top: 0;
+  left: -10px;
+  filter: contrast(50%);
+}
+
+/*FOOTER*/
+
+footer {
+  background-color: rgb(36, 52, 60);
+}
+
+
+@media (max-width : 992px) {
+  .grid-sizer {
+    width: auto;
+  }
+  .photo-item, .photo-item--width2{
+    width: 100% !important;
+  }
+}
